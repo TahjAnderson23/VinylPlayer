@@ -1,0 +1,50 @@
+/** Now Playing **/
+.now-playing__name {
+  font-size: 1.5em;
+  margin-bottom: 0.2em;
+}
+.now-playing__artist {
+  margin-bottom: 1em;
+}
+.now-playing__status {
+  margin-bottom: 1em;
+}
+.now-playing__img {
+  float: right;
+  margin-right: 10px;
+  margin-top: 5px;
+  text-align: right;
+  width: 45%;
+}
+.now-playing__img img {
+  display: flex;
+  max-width: 80vmin;
+  width: 100%;
+  border-radius: 50%;
+}
+@keyframes track-spin{
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+
+}
+
+@media (prefers-reduced-motion: no-preference){
+  .now-playing__img img{
+    animation: track-spin infinite 20s linear;
+  }
+}
+.now-playing__side {
+  margin-left: 5%;
+  width: 45%;
+}
+/** Progress **/
+.progress {
+  border: 1px solid #eee;
+  height: 6px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.progress__bar {
+  background-color: #eee;
+  height: 4px;
+}
