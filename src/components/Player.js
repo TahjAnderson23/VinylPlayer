@@ -1,5 +1,6 @@
 import React from "react";
 import "./Player.css";
+import Particles from 'react-particles-js';
 const Player = props => {
   const backgroundStyles = {
     backgroundImage: `url(${props.item.album.images[0].url})`,
@@ -13,6 +14,7 @@ const Player = props => {
   return (
     <div className="App">
       <div className="main-wrapper">
+      <Particles />
         <div className="now-playing__img">
           <img src={props.item.album.images[0].url} />
         </div>
